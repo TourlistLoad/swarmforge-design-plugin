@@ -1,0 +1,19 @@
+{
+  "description": "SwarmForge Lite design pack: start-of-session paths, role guard, report check. Silent outside a workspace that holds the pack.",
+  "hooks": {
+    "SessionStart": [
+      {"matcher": "startup|resume|clear|compact",
+       "hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/sfd\" context", "timeout": 15}]}
+    ],
+    "SubagentStart": [
+      {"hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/sfd\" context", "timeout": 15}]}
+    ],
+    "PreToolUse": [
+      {"matcher": "Bash|Edit|Write|MultiEdit|NotebookEdit|Agent",
+       "hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/sfd\" guard", "timeout": 15}]}
+    ],
+    "SubagentStop": [
+      {"hooks": [{"type": "command", "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/scripts/sfd\" report", "timeout": 15}]}
+    ]
+  }
+}

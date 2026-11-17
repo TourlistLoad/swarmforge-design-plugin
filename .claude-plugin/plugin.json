@@ -1,0 +1,9 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "swarmforge-design",
+  "version": "1.1.0",
+  "description": "The SwarmForge Lite design pack (branch dsh-swarmforge-design-boosted) for Claude Code: the seven roles as subagents built from the pack's own protocol files, every configured project's paths and PROJECT.md in every session, hook-enforced role ownership and git rules, and a check that every report names its commands and exit status. Changes no file in the pack's repository.",
+  "author": {"name": "SwarmForge Lite for Claude Code"},
+  "homepage": "https://github.com/bananaback/swarm-forge-lite-design-boosted/tree/dsh-swarmforge-design-boosted",
+  "keywords": ["swarmforge", "pipeline", "tdd", "gherkin", "design", "subagents", "hooks"]
+}

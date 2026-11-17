@@ -1,0 +1,13 @@
+{
+  "name": "swarmforge-design",
+  "description": "Marketplace for the swarmforge-design plugin (SwarmForge Lite design pack for Claude Code).",
+  "owner": {"name": "SwarmForge Lite for Claude Code"},
+  "plugins": [
+    {
+      "name": "swarmforge-design",
+      "source": "./",
+      "description": "The SwarmForge Lite design pack for Claude Code: seven role subagents from protocol/*.md, config/pack.json paths in every session, role ownership and git rules, report checks.",
+      "version": "1.1.0"
+    }
+  ]
+}
